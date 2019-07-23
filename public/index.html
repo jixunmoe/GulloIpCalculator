@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gullo IP Calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Gullo IP Calculator</h1>
+        </header>
+        
+        <form id="ip-form">
+            <p><label><span>IP:</span><input disabled type="text" id="ip" placeholder="10.10.x.x"></label></p>
+            <p><pre id="result"></pre></p>
+            <p id="actions"><input type="submit" value="Submit" disabled></p>
+            <noscript>
+                You need to have JavaScript enabled for this tool to work.
+            </noscript>
+        </form>
+
+        <footer>
+            <p>Note: This site does not affiliate with <a href="https://hosting.gullo.me/"
+                rel="noopener nofollow noreferrer" target="_blank">Gullo's Hosting</a>;
+               when in doubt, use the <a href="https://hosting.gullo.me/plugin/support_manager/knowledgebase/view/8/start-here/5/"
+               rel="noopener nofollow noreferrer" target="_blank">official ip calculator</a> instead.</p>
+            <p>This tool is developed by <a href="https://jixun.uk/">Jixun</a>.</p>
+        </footer>
+    </main>
+
+    <style>
+        html, body {
+            font-family: 'Rubik', sans-serif;
+            margin-top: 3em;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            max-width: 18em;
+            margin: auto;
+        }
+
+        @media (min-width: 1024px) {
+            main {
+                padding: 1em 3em;
+                box-shadow: 0 0 5px #0003;
+            }
+        }
+
+        label {
+            cursor: pointer;
+        }
+        label > span {
+            display: inline-block;
+            width: 3em;
+        }
+
+        #actions {
+            text-align: center;
+        }
+
+        #result {
+            display: inline-block;
+            height: 6em;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 75%;
+        }
+    </style>
+
+    <script src="./bundle.js"></script>
+</body>
+</html>
